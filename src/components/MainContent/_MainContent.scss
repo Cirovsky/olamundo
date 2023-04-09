@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+
+.main{
+    position: relative;
+    height:fit-content;
+    color: $color-neutral;
+    &__title{
+        position: absolute;
+        z-index: 2;
+        top: 62px;
+        left: 120px;
+        h2{
+            font-size: $big-size;
+            line-height: calc($big-size * 1.25);
+        }
+        &-background{
+            position: relative;
+            background: no-repeat center;
+            background-size: cover;
+            height: 204px;
+            opacity: 0.3;
+        }
+    }
+    &__content{
+        padding: 40px 120px 0 120px;
+        h3{
+            font-size: calc($big-size/1.6);
+            line-height: calc($big-size * 1.25);
+        }
+        &-text{
+            .image-container{
+                float: right;
+                width: 589px;
+                height: 598px;
+                margin: 0 0 0 24px ;
+                background-color: $color-dark;
+            }
+            p{
+                font-family: $raleway;
+                font-size: calc($big-size/2.66);
+                line-height: calc($big-size/1.78);
+                text-align: justify;
+            }
+        }
+    }
+}

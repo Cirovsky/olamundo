@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+
+@mixin container-h-center{
+    display: flex;
+    justify-content: center;
+}
+
+.container__cards {
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 120px;
+    justify-content: space-between;
+    row-gap: calc($big-size/2.66);
+    z-index: 2;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 290px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.219);
+    &:hover{
+        transform: translate(0, -1rem);
+    }
+    &__container {
+        &-image {
+            @include container-h-center;
+            width: 280px;
+            height: 150px;
+            background-color: $color-dark;
+            overflow: hidden;
+        }
+        &-text{
+            @include container-h-center;
+            align-items: center;
+            padding-top: 4px;
+            height: calc(($big-size *3)/4) ;
+            h2{
+                text-align: center;
+                line-height: calc($big-size/2.6);
+            }
+        }
+        &-button {
+            @include container-h-center;
+            align-items: center;
+            flex-grow: 1;
+            .button{
+                width: 78px;
+                height: 40px;
+                border-radius: 24px;
+            }
+        }
+    }
+}

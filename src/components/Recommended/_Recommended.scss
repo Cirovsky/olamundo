@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.recommended{
+    padding: 0 120px 80px 120px;
+    &__title{
+        @include play-bolder;
+        font-size: calc($big-size/1.67);
+    }
+    &-cards{
+        padding-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}

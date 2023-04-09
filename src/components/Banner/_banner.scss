@@ -1,0 +1,99 @@
+@import '../../styles/variables';
+
+@mixin basicBanner{
+    display: flex;
+    background-color: $color-dark;
+    color: $color-light;
+    height: 408px;
+    padding: 40px 140px 100px 120px;
+    h2{
+        font-size: $big-size;
+        margin-bottom: calc($big-size/2);
+    }
+    p{
+        font-size: calc($big-size/2.66);
+    }
+}
+
+.banner{
+    @include basicBanner;
+    justify-content: space-between;
+    &__left{
+        margin-top: 80px;
+        width: calc($big-size * 8.2);
+    }
+    &__right{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        width: 550px;
+        height: 100%;
+        &-circle{
+            
+            display: block;
+            width: 362px;
+            height: 362px;
+            background: $gradient-main;
+            border-radius: 50%;
+            z-index: 1;
+            margin-bottom: 40px;
+        }
+        &-image{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            justify-content: end;
+            bottom:0;
+            width: 266px;
+            height: 266px;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 2;
+        }   
+    }    
+}
+
+.banner-error{
+    @include basicBanner;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 341px;
+    h1{
+        text-align: center;
+        color: $color-emphasis;
+        font-size: calc($big-size * 1.5);
+        line-height: calc($big-size * 1.25);
+        margin-bottom: calc($big-size/2);
+    }
+    h2{
+        font-size: calc($big-size/1.333);
+        line-height: calc($big-size * 1.25);
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        width: 65%;
+        margin: 0 auto;
+        
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        .container__button{
+            padding-top: 56px;
+            width: 378px;
+            text-align: center;
+            &-display{
+                width: fit-content;
+                margin: 0 auto;
+            }
+            .button{
+                width: 179px;
+                height: 66px;
+                font-size: calc($big-size/2.67);
+                border-radius: 24px;
+            }
+        }
+    }
+}

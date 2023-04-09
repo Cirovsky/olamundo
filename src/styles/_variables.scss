@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway&display=swap");
+
+$playfair: 'Playfair Display', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+$color-light: white;
+$color-emphasis: #1875E8;
+$color-neutral: #444444;
+$color-dark: #041833;
+
+@mixin invert{
+    color: $color-light;
+    background-color: $color-dark;
+}
+
+@mixin play-bolder{
+    font-family: $playfair;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+@mixin play-bold{
+    font-family: $playfair;
+    font-weight: 600;
+}
+
+@mixin play-normal{
+    font-family: $playfair;
+    font-weight: 400;
+}
+
+@mixin rale-normal{
+    font-family: $raleway;
+    font-weight: 400;
+}
+
+$gradient-main: conic-gradient(pink 25%, aqua 50%, rgb(243, 243, 148) 75%, pink 100%);
+
+$big-size: 4rem;
+

@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.header{
+    display: flex;
+    justify-content: center;
+    height: 112px;
+    @include rale-normal;
+    &__navigation{
+        display: flex;
+        align-items: center;
+        width: 198px;
+        ul{
+            display: flex;
+            column-gap: calc(($big-size * 3) /4);
+            a{
+                color: $color-dark;
+                font-size: calc($big-size / 3.2);
+                text-decoration: none;
+            }
+            .linkEmphasis{
+                border-bottom: 1px solid;
+            }
+        }
+    }
+}

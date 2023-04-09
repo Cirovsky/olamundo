@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+footer{
+    margin-top: 96px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include invert;
+    @include rale-normal;
+    font-size: calc($big-size/4);
+    height: 83px;
+}

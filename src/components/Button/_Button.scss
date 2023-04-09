@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.button{
+    font-family: $raleway;
+    font-size: calc($big-size/3.55);
+    color: $color-light;
+    background-color: $color-emphasis;
+    border: 3px solid transparent;
+    cursor: pointer;
+    &:hover{
+        border: 3px solid $color-dark;
+    }
+}
