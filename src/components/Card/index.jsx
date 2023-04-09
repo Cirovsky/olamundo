@@ -5,7 +5,6 @@ import { Link, useHref } from 'react-router-dom';
 export default function Card({ post }) {
     const capa = post.capa;
     let location = useHref();
-    console.log(location)
     
     return (
         <div className='card'>
