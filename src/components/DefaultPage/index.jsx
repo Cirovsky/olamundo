@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from 'components/Banner'
-import avatar from 'assets/Kermit.jpg'
+import avatar from '../../assets/kermit.jpg'
 
 import 'styles/styles.css'
 import { Outlet } from 'react-router-dom';
